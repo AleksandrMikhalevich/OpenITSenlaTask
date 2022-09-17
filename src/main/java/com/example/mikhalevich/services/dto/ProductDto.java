@@ -5,6 +5,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.Set;
 
 /**
  * A DTO for the {@link com.example.mikhalevich.entities.Product} entity
@@ -16,4 +17,5 @@ public class ProductDto implements Serializable {
     private final Integer price;
     private final ProductStatus status;
     private final LocalDate createdAt;
+    private final Set<OrderDto> orders;
 }
